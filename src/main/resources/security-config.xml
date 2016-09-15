@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:oauth="http://www.springframework.org/schema/security/oauth2"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:sec="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/security/oauth2 http://www.springframework.org/schema/security/spring-security-oauth2.xsd
+        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <sec:authentication-manager />
+    <bean id="preAuthenticationEntryPoint" class="org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEntryPoint" />
+
+    <oauth:resource-server id="oauth2ServiceFilter" token-services-ref="tokenServices" />
+
+    <oauth:client id="oauth2ClientFilter" />
+
+    <bean id="tokenServices" class="com.ge.predix.uaa.token.lib.FastTokenServices">
+        <property name="trustedIssuers">
+            <list>
+                <value>${accessTokenEndpointUrl}</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <http pattern="/" request-matcher="ant"
+          xmlns="http://www.springframework.org/schema/security"
+          disable-url-rewriting="true" use-expressions="true"
+          entry-point-ref="preAuthenticationEntryPoint" create-session="stateless">
+
+        <intercept-url pattern="/echo" access="isFullyAuthenticated()" />
+        <anonymous enabled="false" />
+        <custom-filter ref="oauth2ServiceFilter" position="PRE_AUTH_FILTER" />
+    </http>
+
+</beans> -->
