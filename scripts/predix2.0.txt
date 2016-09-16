@@ -1,0 +1,179 @@
+predix
+
+is developed as paas
+we do not need to bother about infrastructure & hosts
+
+provides industrial grade services
+
+
+provides services like asset monitoring & timeseries data like historical data
+
+scales dynamically
+
+CF really needed for PREDIX
+
+
+
+
+
+Primary componenents of predix
+
+1. Predix Machine
+ -> Software layer which will be installed on gateways, controller and sensor
+ -> Communicate between Industrial asset & cloud
+ 
+2. Predix Connectivity
+ -> Useful where a direct Internet connection is not readily available. 
+ -> This service enables machines to talk to the Predix Cloud via a virtual network
+    comprised of cellular, fixed line, and satellite technologies
+
+3. Predix Cloud
+   ->  Predix Cloud is a global secure cloud infrastructure
+4. Predix Services
+   -> Services for build , test & run the appliations
+  -> provide micro Services for publishing and consuming services from third parties
+
+ 
+
+
+https://github.build.ge.com/adoption/predix-rmd-ref-app#predix-rmd-reference-app
+
+
+https://github.build.ge.com/Predix-Experience/predix-seed
+
+
+https://artifactory.predix.io/artifactory/webapp/#/home
+
+
+https://github.build.ge.com/adoption/rmd-predix-ui
+
+https://github.build.ge.com/adoption/predix-rmd-ref-app#predix-rmd-reference-app
+
+https://github.build.ge.com/adoption/rmd-predix-ui/blob/master/public/docs/assetModel.md
+https://github.build.ge.com/adoption/predix-boot
+https://github.build.ge.com/PXd
+
+https://github.com/gstroup/apimocker
+
+
+https://github.sw.ge.com/pages/PX/technical-principles/
+
+
+
+https://github.build.ge.com/PXc/px.git
+
+
+-----------------------
+set HTTPS_PROXY=http://<login_internet>:<password_internet>@aproxy:aport
+set HTTP_PROXY=http://<login_internet>:<password_internet>@aproxy:aport
+set NO_PROXY=localhost,my.company
+set https_proxy=http://sa99166:Msataug%402016@10.30.0.155:8080
+
+
+
+set HTTPS_PROXY=http://sa99166:Msataug%402016@3.28.29.241:88
+set HTTP_PROXY=http://sa99166:User%401234@3.28.29.241:88
+set NO_PROXY=localhost,my.company
+
+set HTTPS_PROXY=http://proxy-src.research.ge.com:8080
+set HTTP_PROXY=http://proxy-src.research.ge.com:8080
+set NO_PROXY=localhost,my.company
+
+set HTTPS_PROXY=http://sa99166:MsatAug%402016@cis-india-pitc-bangalorez.proxy.corporate.ge.com:80
+set HTTP_PROXY=http://sa99166:MsatAug%402016@proxy-src.research.ge.com:8080
+set NO_PROXY=localhost,my.company
+
+
+
+-----------------------
+
+path=%PATH%;%APPDATA%\npm
+
+
+---------------------
+cf login -a https://api.system.aws-usw02-pr.ice.predix.io
+
+yash.nougrahiya@ge.com
+Predix12Beta
+cf login -a https://api.grc-apps.svc.ice.ge.com 
+
+student13 12:04 PM 
+chang3m3 
+
+My logins
+
+
+student23
+Tr@nsForm20!6
+
+
+
+
+
+cf login -a https://api.system.aws-usw02-pr.ice.predix.io 
+9:10 PM 
+
+ganeshvarma.gadiraju@ge.com 
+9:11 PM 
+
+ggv90685@GE 
+
+
+https://github.com/PredixDev/predix-microservice-templates
+
+
+
+https://www.predix.io/support/article/KB0010829
+-----------------------------------------------------------------
+pgstudio
+https://github.com/john-k-ge/pg_studio_1.2_cf working
+
+https://github.com/gavioto/pgStudio not working
+vmr-pg-studio.run.aws-usw02-pr.ice.predix.io/PgStudio.jsp 
+First, clone the following Git repository to your local filesystem:  https://github.com/john-k-ge/pg_studio_1.2_cf
+With the app source saved locally, change to the directory in your command line:  cd ~/GitHub/pg-studio.
+Modify the manifest.yml to ensure there are no route conflicts.  For example, update the "- name:" value to something unique (e.g. phstudio-myOrg-mySpace).
+Using the CF CLI, login and target your intended org/space destination.
+Push the app and confirm it starts successfully.
+Using the CF CLI, bind your existing Postgres service instance to your app:  cf bs my-demo-app  my-postgres-instance
+Restage this app to ensure it picks up the Postgres connection environment variables:  cf restage my-demo-app
+With the app bound, check the environment variables to get the Postgres username, password and database name:  cf env my-demo-app
+
+  "postgres": [
+   {
+    "credentials": {
+     ...
+     "database": "your_db_name",
+     ...
+     "host": "xx.xx.xx.xx",
+     ...
+     "password": "your_db_password",
+     "port": "5432",
+     ...
+    "username": "your_db_username"
+    },
+    ...
+   }
+  ],
+...
+Access the URL of your pgStudio app and logon with the host, port, database name, username, and password.  You can browse your database.  If you have further questions about pgStudio, you can check the product website:  http://www.postgresqlstudio.org/
+Outcomes 
+
+You can execute SQL against the Postgres database.
+--------------------------------------------------------------
+
+
+https://www.predix.io/services/starter-pack.html?id=1224
+sravan.ananthula@ge.com
+Predix@123Ge
+
+student23/Tr@nsForm20!6
+
+
+
+
+
+venkata.dangeti@ge.com 
+2:18 PM 
+
+Dotnet@05mvcD 
