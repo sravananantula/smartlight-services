@@ -1,0 +1,121 @@
+Welcome@123GE
+Predix@123Ge
+
+
+https://predix.instructorled.training/lobby
+
+
+Predix training
+
+
+Machine
+
+is diff from Aws. 
+AWS any body can login/access
+
+predix :
+Industry people can login
+pay get account and login
+
+Predix machine is like digital twin allowed to gather data
+
+Predix is like train
+CF is like platfrom
+CF is open source platform
+PAAS 
+
+Predix version
+basic - to test the predix platform
+select - high end version and stable predix platform
+For development and to move production
+
+
+forum.predix.io:
+
+------------------------------
+CF commands:
+cf -h
+cf cs postgres shared-nr srava-postgres-service
+cf s | grep postgres
+
+
+
+
+cf create-service predix-uaa Tiered sravan-uaa -c sampleuaa.json
+sampleuaa.json is below
+{"adminClientSecret":"sravan","subdomain":"sravansubdomain"}
+set HTTPS_PROXY=http://proxy-src.research.ge.com:8080
+
+cf login -a https://api.system.aws-usw02-pr.ice.predix.io
+
+
+------------------------------------------------------
+
+Security
+UAA 
+CLOUDFOUNDRY.ORG
+
+UAA & acs are tightly coupled
+
+
+TMS tenant management system
+
+predix.io-> resources
+
+
+https://github.com/cloudfoundry/uaa/blob/master/docs/UAA-APIs.rst#scopes-authorized-by-the-uaa
+
+https://www.predix.io/docs/?r=102977#pOVsUZ0a
+
+
+http://www.simplecloud.info/
+
+OAUTH is like single signon
+
+-----------------------------------
+oauth is client of a web application
+
+zone id useful for communication bw micro services on different spaces
+
+----------------------------------------------
+
+https://github.com/cloudfoundry/uaa/blob/master/docs/UAA-APIs.rst#scopes-authorized-by-the-uaa
+
+https://www.predix.io/docs/?r=102977#pOVsUZ0a
+
+-------------------------------
+Asset api
+
+convert asset json to triples and uses GEL to store in Casandra dabase
+
+JSON data is converted into RDF Triples (CRUD Layer) 
+and stored in the Cassandra DB. 
+You use GEL Queries to search that Cassandra DB very flexibly and quickly
+
+User defined domain object
+
+https://my-space/v1/locomotive/1
+https://predix-asset.run.aws-usw02-pr.ice.predix.io/locomativeengine
+-------------------------------------
+https://github.com/Training-Predix/TCS-Loc-Training/blob/master/UAA%20Set%20Up%20-%20Training.txt
+
+https://github.com/Training-Predix/
+
+-----------------------
+Analytics
+Predix - is trying to move from TRENDS to PREDICTION
+
+Even if one analytic it needs orchestration
+
+Bpmn 
+
+Business process
+
+https://github.com/PredixDev/predix-analytics-sample/tree/master/orchestrations
+
+
+UAA as identity provider
+
+
+
+https://33612c95-2c91-4ca5-b3a4-be3f3e76b489.predix-uaa.run.aws-usw02-pr.ice.predix.io/saml/idp/metadata
